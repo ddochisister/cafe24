@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomeFood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery-3.6.4.js"></script>
+    <script src="script/jquery-ui.js"></script>
+    <script src="script/slick.js"></script>
+    <script src="script/main.js"></script>
+
+</head>
+<body>
+    <div class="menu_open">
+        <div class="menu_open_closebtn">
+            <i class="fa-solid fa-xmark"></i>
+        </div><!-- menu_open_closebtn -->
+        <div class="menu_open_inner">
+            <div class="menu_open_top">
+                <div><h1><a href="#">SomeFood</a></h1></div>
+                <div><input type="text" placeholder="search..."></div>
+            </div><!-- menu_open_top -->
+
+            <ul class="menu_list">
+                <li>
+                    SHOP
+                    <ul class="menu_list_sub">
+                        <li><a href="#">NEW</a></li>
+                        <li><a href="#">BEST</a></li>
+                        <li><a href="#">GRANOLA</a></li>
+                        <li><a href="#">MUESLI</a></li>
+                        <li><a href="#">CEREAL</a></li>
+                    </ul>
+                </li>
+                <li>
+                    COMMUNITY
+                    <ul class="menu_list_sub">
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">REVIEW</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">EVENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    ACCOUNT
+                    <ul class="menu_list_sub">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">주문조회</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">장바구니(0)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    C/S CENTER
+                    <div class="cs_number">02-456-1234</div>
+                    <div class="cs_small">MON-FRI 10:00 - 18:00 / <br> LUNCH 12:00 - 13:30 / <br> SAT, SUN, HOLY OFF</div>
+                    <div class="cs_small bank">은행명 000-000-0000 <br>은행명 000-000-0000 <br>은행명 000-000-0000 <br>예금주명: 어썸디</div>
+                    <ul class="menu_list_icon">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fas fa-sms"></i></a></li>
+                    </ul>
+                </li>
+            </ul><!-- menu_list -->
+        </div><!-- menu_open_inner -->
+    </div><!-- menu_open -->
+
+
+    <div class="m_menu_open">
+        <div class="m_menu_open_closebtn">
+            <i class="fa-solid fa-xmark"></i>
+        </div><!-- m_menu_open_closebtn -->
+        <div class="m_menu_open_inner">
+            <div class="m_menu_open_top">
+                <div><h1><a href="#">SomeFood</a></h1></div>
+                <div><input type="text" placeholder="search..."></div>
+            </div><!-- m_menu_open_top -->
+
+            <ul class="m_menu_list">
+                <li>
+                    SHOP
+                    <ul class="m_menu_list_sub">
+                        <li><a href="#">NEW</a></li>
+                        <li><a href="#">BEST</a></li>
+                        <li><a href="#">GRANOLA</a></li>
+                        <li><a href="#">MUESLI</a></li>
+                        <li><a href="#">CEREAL</a></li>
+                    </ul>
+                </li>
+                <li>
+                    COMMUNITY
+                    <ul class="m_menu_list_sub">
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">REVIEW</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">EVENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    ACCOUNT
+                    <ul class="m_menu_list_sub">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">주문조회</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">장바구니(0)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    C/S CENTER
+                    <div class="m_cs_number">02-456-1234</div>
+                    <div class="m_cs_small">MON-FRI 10:00 - 18:00 / <br> LUNCH 12:00 - 13:30 / <br> SAT, SUN, HOLY OFF</div>
+                    <div class="m_cs_small bank">은행명 000-000-0000 <br>은행명 000-000-0000 <br>은행명 000-000-0000 <br>예금주명: 어썸디</div>
+                    <ul class="m_menu_list_icon">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fas fa-sms"></i></a></li>
+                    </ul>
+                </li>
+            </ul><!-- m_menu_list -->
+        </div><!-- m_menu_open_inner -->
+    </div><!-- m_menu_open -->
+
+
+
+    <div id="wrap">
+        <div class="util clear_fix">
+            <div class="util_inner">
+                <div class="cs_center"><i class="fa-solid fa-headset"></i>CS CENTER <span>02-456-1234</span></div><!-- cs_center -->
+                <div class="util_right">
+                    <div class="search">
+                        <input type="text" placeholder="search...">
+                    </div><!-- chart -->
+                    <div class="chart">
+                        <ul class="chart_list">
+                            <li><a href="#"><span>1</span>프리미엄 선물세트</a></li>
+                            <li><a href="#"><span>2</span>선물세트</a></li>
+                            <li><a href="#"><span>3</span>답례품</a></li>
+                            <li><a href="#"><span>4</span>아카시아 꿀</a></li>
+                            <li><a href="#"><span>5</span>숙취한방 꿀차</a></li>
+                        </ul><!-- chart_list -->
+                    </div><!-- chart -->
+                    <div class="login">
+                        <a href="#">로그인</a>
+                        <span>|</span>
+                        <a href="#">회원가입</a>
+                    </div><!-- login -->
+                </div><!-- util_right -->
+            </div><!-- util_inner -->
+        </div><!-- util -->
+
+
+        <header id="header">
+            <div class="header_inner">
+                <h1 class="logo"><a href="#">SomeFood</a></h1>
+                <nav class="nav">
+                    <ul class="main">
+                        <li>
+                            <a href="#">BRAND</a>
+                        </li>
+                        <li>
+                            <a href="#">PRODUCT</a>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                            <ul class="sub">
+                                <li><a href="#">NEW</a></li>
+                                <li><a href="#">BEST</a></li>
+                                <li><a href="#">GRANOLA</a></li>
+                                <li><a href="#">MUESLI</a></li>
+                                <li><a href="#">CEREAL</a></li>
+                            </ul><!-- sub -->
+                        </li>
+                        <li>
+                            <a href="#">COMMUNITY</a>
+                            <ul class="sub">
+                                <li><a href="#">NOTICE</a></li>
+                                <li><a href="#">REVIEW</a></li>
+                                <li><a href="#">Q&A</a></li>
+                                <li><a href="#">EVENT</a></li>
+                            </ul><!-- sub -->
+                        </li>
+                        <li>
+                            <a href="#">CONTACT US</a>
+                        </li>
+                    </ul><!-- main -->
+                </nav><!-- nav -->
+                <div class="info">
+                    <ul>
+                        <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li class="menu_open_click"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                        <li class="m_menu_open_click"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    </ul>
+                </div>
+            </div><!-- header_inner -->
+        </header><!-- header -->
+
+
+
+
+        <section id="section clear_fix">
+            <div class="main_visual clear_fix">
+                <ul class="visual_wrap">
+                    <li class="visu_slide">
+                        <img src="img/main_bnn_visual01.jpg" alt="main_bnn_visual01">
+                        <div class="visu_txt_wrap">
+                            <div class="visu_txt_cont">#숙취한방 꿀차 #설탕대용</div>
+                            <div class="visu_txt_title">
+                                자연에서 선사한 <br> <span>아카시아 꿀</span>
+                            </div><!-- visu_txt_title -->
+                            <div class="visu_txt_sub">
+                                자연에서 얻은 순수한 꿀만 담았습니다. <br> 정직하고 썸푸드만의 특별한 꿀
+                            </div><!-- visu_txt_sub -->
+                            <div class="visu_btn_show">
+                                <a href="#">SHOW NOW ></a>
+                            </div><!-- visu_btn_show -->
+                        </div><!-- visu_txt_wrap -->
+                    </li><!-- visu_slide -->
+
+                    <li class="visu_slide">
+                        <img src="img/main_bnn_visual02.jpg" alt="main_bnn_visual02">
+                        <div class="visu_txt_wrap">
+                            <div class="visu_txt_cont"># 남녀노소 #누구나 #좋아하는</div>
+                            <div class="visu_txt_title">
+                                아침 간단 한수저 <br> <span>새콤달콤 레몬 꿀</span>
+                            </div><!-- visu_txt_title -->
+                            <div class="visu_txt_sub">
+                                아침을 꿀차와 함께 시작하세요! <br> 달콤한 꿀과 레몬이 만난 최고의 조합
+                            </div><!-- visu_txt_sub -->
+                            <div class="visu_btn_show">
+                                <a href="#">SHOW NOW ></a>
+                            </div><!-- visu_btn_show -->
+                        </div><!-- visu_txt_wrap -->
+                    </li><!-- visu_slide -->
+
+                    <li class="visu_slide">
+                        <img src="img/main_bnn_visual03.jpg" alt="main_bnn_visual03">
+                        <div class="visu_txt_wrap">
+                            <div class="visu_txt_cont"># 남녀노소 #누구나 #좋아하는</div>
+                            <div class="visu_txt_title">
+                                건강한 영양성분 <br> <span>가득, 야생화 꿀</span>
+                            </div><!-- visu_txt_title -->
+                            <div class="visu_txt_sub">
+                                깊은 향과 쌉싸름한 맛이 특징인 <br>천연꿀에 정성을 담아 만들었습니다.
+                            </div><!-- visu_txt_sub -->
+                            <div class="visu_btn_show">
+                                <a href="#">SHOW NOW ></a>
+                            </div><!-- visu_btn_show -->
+                        </div><!-- visu_txt_wrap -->
+                    </li><!-- visu_slide -->
+                </ul><!-- visual_wrap -->
+            </div><!-- main_visual -->
+
+            <div class="content01 clear_fix">
+                <div class="content01_inner">
+                    <div class="cont01"><p>GRANOLA WITH HONEY BITS</p></div>
+                    <div class="cont02"><p>맛도 좋고 유기농 <br> 재료로 만든 <span>썸푸드</span></p></div>
+                    <div class="cont03"><p>우리들만의 아이디어로 만들어가는 브랜드, 썸푸드입니다. <br>
+                        원하시는 내용으로 구성하여 메인에 브랜드를 소개해보세요. <br>
+                        자세한 사용방법이 메뉴얼에 안내되어있습니다.</p>
+                    </div><!-- cont03 -->
+                </div><!-- content01_inner -->
+            </div><!-- content01 -->
+
+            <div class="content02 clear_fix">
+                <div class="content02_inner">
+                    <ul class="content02_list">
+                        <li>
+                            <a href="#">
+                                <div class="content02_img">
+                                    <img src="img/main_bnn_brand01.jpg" alt="main_bnn_brand01">
+                                </div>
+                                <div class="content02_text">
+                                    <h3>자수를 이용한 독특한 디자인</h3>
+                                    <p>자수는 손으로하는 작업의 특별한 품질을 강조하는 매개체가됩니다. <br>
+                                        그래놀라에 들어가 주원료를 알 수 있습니다.</p>
+                                </div><!-- content02_text -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content02_img">
+                                    <img src="img/main_bnn_brand02.jpg" alt="main_bnn_brand02">
+                                </div>
+                                <div class="content02_text">
+                                    <h3>친환경 재료로만 구성된 건강 푸드</h3>
+                                    <p>자연 속 재료를 통해 흔히 볼 수 없는 조합으로, 맛도 잡고 <br>
+                                        건강에도 좋은 그래놀라를 만나보세요!</p>
+                                </div><!-- content02_text -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content02_img">
+                                    <img src="img/main_bnn_brand03.jpg" alt="main_bnn_brand03">
+                                </div>
+                                <div class="content02_text">
+                                    <h3>재활용 가능성을 향상</h3>
+                                    <p>일반 재료들로 만들어진 물품이 폐기되고나서 다시 가공하여 용도를 <br>
+                                        바꾼 소재를 이용하여 재활용가능성이 향상 효과를 냅니다</p>
+                                </div><!-- content02_text -->
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- content02_inner -->
+            </div><!-- content02 -->
+
+            <div class="content03 clear_fix">
+                <div class="content03_inner">
+                    <div class="content03_left">
+                        <div class="content03_left_new">
+                            <p><i class="fa-solid fa-n"></i></p>
+                            <div>새로 올라 온 소식</div>
+                            <a href="#" class="more">more+</a>
+                            <a href="#" class="mall">몰 오픈을 축하합니다.</a>
+                            <span>2022-12-05</span>
+                        </div><!-- content03_left_new -->
+                        <div class="content03_left_banner">
+                            <a href="#">
+                                <h3>꿀빠는 선물세트</h3>
+                                <h4>1+1+1 특별 기획전</h4>
+                                <span>ㅡ</span>
+                                <p>39,000<span>원</span></p>
+                            </a>
+                        </div><!-- content03_left_banner -->
+                    </div><!-- content03_left -->
+
+                    <div class="content03_right">
+                        <ul class="content03_right_fade">
+                            <li><img src="img/main_bnn_right01.jpg" alt="main_bnn_right01"></li>
+                            <li><img src="img/main_bnn_right02.jpg" alt="main_bnn_right02"></li>
+                        </ul>
+                        <div class="content03_right_box">
+                            <h4>EVENT</h4>
+                            <h3>지금까지 없었던 색다른</h3>
+                            <h2>레시피를 만나보세요</h2>
+                            <a href="#">more ></a>
+                        </div>
+                    </div><!-- content03_right -->
+                </div><!-- content03_inner -->
+            </div><!-- content03 -->
+
+            <div class="new_item_section clear_fix">
+                <div class="new_item_section_inner">
+                    <h2>
+                        <div class="title">NEW ITEMS</div><!-- title -->
+                        <div class="sub_title">새로나온 브랜드 제품을 소개합니다.</div><!-- sub_title -->
+                    </h2>
+                    <ul class="new_item_section_list">
+                        <li>
+                            <a href="#"><img src="img/new01_.jpg" alt="new01"></a>
+                            <div class="content_list_txt">
+                                <a href="#"><h3>그래놀라 3종 세트</h3></a>
+                                <p>ㅡ</p>
+                                <p>오트밀과 꿀이 만난 최고의 조합</p>
+                                <span class="sale">50,000원</span>
+                                <span>45,000원</span>
+                                <div class="yellow">yellow</div>
+                                <div class="red">red</div>
+                                <div class="orange">orange</div>
+                                <div class="white">white</div>
+                            </div><!-- content_list_txt -->
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/new02.jpg" alt="new02"></a>
+                            <div class="content_list_txt">
+                                <a href="#"><h3>1+1 기획 그래놀라 세트</h3></a>
+                                <p>ㅡ</p>
+                                <p>오트밀과 꿀이 만난 최고의 조합</p>
+                                <span class="sale">40,000원</span>
+                                <span>38,000원</span>
+                                <div class="yellow">yellow</div>
+                                <div class="red">red</div>
+                                <div class="orange">orange</div>
+                                <div class="white">white</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/new03.jpg" alt="new03"></a>
+                            <div class="content_list_txt">
+                                <a href="#"><h3>딸기 레몬 그래놀라 3종 세트</h3></a>
+                                <p>ㅡ</p>
+                                <p>오트밀과 꿀이 만난 최고의 조합</p>
+                                <span class="sale">55,000원</span>
+                                <span>50,000원</span>
+                                <div class="yellow">yellow</div>
+                                <div class="red">red</div>
+                                <div class="orange">orange</div>
+                                <div class="white">white</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/new04.jpg" alt="new04"></a>
+                            <div class="content_list_txt">
+                                <a href="#"><h3>대용량 기본 오트밀 그래놀라</h3></a>
+                                <p>ㅡ</p>
+                                <p>오트밀과 꿀이 만난 최고의 조합</p>
+                                <span class="sale">35,000원</span>
+                                <span>28,000원</span>
+                                <div class="yellow">yellow</div>
+                                <div class="red">red</div>
+                                <div class="orange">orange</div>
+                                <div class="white">white</div>
+                            </div>
+                        </li>
+                    </ul><!-- new_item_section_list -->
+                </div><!-- new_item_section_inner -->
+            </div><!-- new_item_section -->
+
+            <div class="video_clip_section clear_fix">
+                <div class="video_clip_section_inner">
+                    <h2>
+                        <div class="title tit">VIDEO CLIP</div>
+                        <div class="sub_title sutit">110년 노하우로 만든 완벽한 그래놀라</div>
+                    </h2>
+                    <div class="video_clip_section_content">
+                        <div class="video_clip_section_left">
+                            <iframe src="https://www.youtube.com/embed/Juz_H8PKgdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div><!-- video_clip_section_left -->
+    
+                        <div class="video_clip_section_right">
+                            <a href="#"><img src="img/aside_video_right.jpg" alt="aside_video_right"></a>
+                            <div class="content_list_txt">
+                                <a href="#"><h3>허니 레몬 그래놀라</h3></a>
+                                <p>ㅡ</p>
+                                <p>오트밀과 꿀이 만난 최고의 조합</p>
+                                <span class="sale">50,000원</span>
+                                <span>45,000원</span>
+                                <div class="yellow">yellow</div>
+                                <div class="red">red</div>
+                                <div class="orange">orange</div>
+                                <div class="white">white</div>
+                            </div><!-- content_list_txt -->
+                            <div class="content_list_icon">
+                                <a href="#" class="buy_now">buy now ></a>
+                                <a href="#" class="cart"><img src="img/icon_202212091524200600.png" alt="cart"></a>
+                                <a href="#" class="like"><img src="img/icon_202212061411339700.png" alt="like"></a>
+                            </div><!-- content_list_icon -->
+                        </div><!-- video_clip_section_right -->
+                    </div><!-- video_clip_section_content -->
+                </div><!-- video_clip_section_inner -->
+            </div><!-- video_clip_section -->
+
+            <div class="project_section clear_fix">
+                <div class="project_section_inner">
+                    <div class="project_section_left">
+                        <h4 class="pro_right">STEADY SELLER</h4>
+                        <h3 class="pro_left">꾸준히 사랑받는 <br> 일주일 다이어트 <br> <span>프로젝트</span></h3>
+                        <div class="look_btn">
+                            <a href="#">LOOK STORY ></a>
+                        </div><!-- look_btn -->
+                    </div><!-- project_section_left -->
+
+                    <div class="project_section_right">
+                        <ul class="project_section_right_list">
+                            <li>
+                                <a href="#"><img src="img/project01.jpg" alt="project01"></a>
+                                <div class="content_list_txt">
+                                    <a href="#"><h3>허니 레몬 그래놀라</h3></a>
+                                    <p>ㅡ</p>
+                                    <p>오트밀과 꿀이 만난 최고의 조합</p>
+                                    <span class="sale">50,000원</span>
+                                    <span>45,000원</span>
+                                    <div class="yellow">yellow</div>
+                                    <div class="red">red</div>
+                                    <div class="orange">orange</div>
+                                    <div class="white">white</div>
+                                </div><!-- content_list_txt -->
+                                <div class="content_list_icon">
+                                    <a href="#" class="buy_now">buy now ></a>
+                                    <a href="#" class="cart"><img src="img/icon_202212091524200600.png" alt="cart"></a>
+                                    <a href="#" class="like"><img src="img/icon_202212061411339700.png" alt="like"></a>
+                                </div><!-- content_list_icon -->
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/project02.jpg" alt="project02"></a>
+                                <div class="content_list_txt">
+                                    <a href="#"><h3>허니 딸기 그래놀라</h3></a>
+                                    <p>ㅡ</p>
+                                    <p>오트밀과 꿀이 만난 최고의 조합</p>
+                                    <span class="sale">30,000원</span>
+                                    <span>27,000원</span>
+                                    <div class="yellow">yellow</div>
+                                    <div class="red">red</div>
+                                    <div class="orange">orange</div>
+                                    <div class="white">white</div>
+                                </div><!-- content_list_txt -->
+                                <div class="content_list_icon">
+                                    <a href="#" class="buy_now">buy now ></a>
+                                    <a href="#" class="cart"><img src="img/icon_202212091524200600.png" alt="cart"></a>
+                                    <a href="#" class="like"><img src="img/icon_202212061411339700.png" alt="like"></a>
+                                </div><!-- content_list_icon -->
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/project03.jpg" alt="project03"></a>
+                                <div class="content_list_txt">
+                                    <a href="#"><h3>딸기 레몬 그래놀라</h3></a>
+                                    <p>ㅡ</p>
+                                    <p>오트밀과 꿀이 만난 최고의 조합</p>
+                                    <span class="sale">55,000원</span>
+                                    <span>50,000원</span>
+                                    <div class="yellow">yellow</div>
+                                    <div class="red">red</div>
+                                    <div class="orange">orange</div>
+                                    <div class="white">white</div>
+                                </div><!-- content_list_txt -->
+                                <div class="content_list_icon">
+                                    <a href="#" class="buy_now">buy now ></a>
+                                    <a href="#" class="cart"><img src="img/icon_202212091524200600.png" alt="cart"></a>
+                                    <a href="#" class="like"><img src="img/icon_202212061411339700.png" alt="like"></a>
+                                </div><!-- content_list_icon -->
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/project04.jpg" alt="project04"></a>
+                                <div class="content_list_txt">
+                                    <a href="#"><h3>대용량 기본 오트밀 그래놀라</h3></a>
+                                    <p>ㅡ</p>
+                                    <p>오트밀과 꿀이 만난 최고의 조합</p>
+                                    <span class="sale">35,000원</span>
+                                    <span>28,000원</span>
+                                    <div class="yellow">yellow</div>
+                                    <div class="red">red</div>
+                                    <div class="orange">orange</div>
+                                    <div class="white">white</div>
+                                </div><!-- content_list_txt -->
+                                <div class="content_list_icon">
+                                    <a href="#" class="buy_now">buy now ></a>
+                                    <a href="#" class="cart"><img src="img/icon_202212091524200600.png" alt="cart"></a>
+                                    <a href="#" class="like"><img src="img/icon_202212061411339700.png" alt="like"></a>
+                                </div><!-- content_list_icon -->
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/project05.jpg" alt="project01"></a>
+                                <div class="content_list_txt">
+                                    <a href="#"><h3>그래놀라 3종 세트</h3></a>
+                                    <p>ㅡ</p>
+                                    <p>오트밀과 꿀이 만난 최고의 조합</p>
+                                    <span class="sale">50,000원</span>
+                                    <span>45,000원</span>
+                                    <div class="yellow">yellow</div>
+                                    <div class="red">red</div>
+                                    <div class="orange">orange</div>
+                                    <div class="white">white</div>
+                                </div><!-- content_list_txt -->
+                                <div class="content_list_icon">
+                                    <a href="#" class="buy_now">buy now ></a>
+                                    <a href="#" class="cart"><img src="img/icon_202212091524200600.png" alt="cart"></a>
+                                    <a href="#" class="like"><img src="img/icon_202212061411339700.png" alt="like"></a>
+                                </div><!-- content_list_icon -->
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/project06.jpg" alt="project06"></a>
+                                <div class="content_list_txt">
+                                    <a href="#"><h3>1+1 기획 그래놀라 세트</h3></a>
+                                    <p>ㅡ</p>
+                                    <p>오트밀과 꿀이 만난 최고의 조합</p>
+                                    <span class="sale">40,000원</span>
+                                    <span>38,000원</span>
+                                    <div class="yellow">yellow</div>
+                                    <div class="red">red</div>
+                                    <div class="orange">orange</div>
+                                    <div class="white">white</div>
+                                </div><!-- content_list_txt -->
+                                <div class="content_list_icon">
+                                    <a href="#" class="buy_now">buy now ></a>
+                                    <a href="#" class="cart"><img src="img/icon_202212091524200600.png" alt="cart"></a>
+                                    <a href="#" class="like"><img src="img/icon_202212061411339700.png" alt="like"></a>
+                                </div><!-- content_list_icon -->
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/project07.jpg" alt="project07"></a>
+                                <div class="content_list_txt">
+                                    <a href="#"><h3>딸기 레몬 그래놀라 3종 세트</h3></a>
+                                    <p>ㅡ</p>
+                                    <p>오트밀과 꿀이 만난 최고의 조합</p>
+                                    <span class="sale">55,000원</span>
+                                    <span>50,000원</span>
+                                    <div class="yellow">yellow</div>
+                                    <div class="red">red</div>
+                                    <div class="orange">orange</div>
+                                    <div class="white">white</div>
+                                </div><!-- content_list_txt -->
+                                <div class="content_list_icon">
+                                    <a href="#" class="buy_now">buy now ></a>
+                                    <a href="#" class="cart"><img src="img/icon_202212091524200600.png" alt="cart"></a>
+                                    <a href="#" class="like"><img src="img/icon_202212061411339700.png" alt="like"></a>
+                                </div><!-- content_list_icon -->
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/project08.jpg" alt="project08"></a>
+                                <div class="content_list_txt">
+                                    <a href="#"><h3>대용량 기본 오트밀 그래놀라</h3></a>
+                                    <p>ㅡ</p>
+                                    <p>오트밀과 꿀이 만난 최고의 조합</p>
+                                    <span class="sale">35,000원</span>
+                                    <span>28,000원</span>
+                                    <div class="yellow">yellow</div>
+                                    <div class="red">red</div>
+                                    <div class="orange">orange</div>
+                                    <div class="white">white</div>
+                                </div><!-- content_list_txt -->
+                                <div class="content_list_icon">
+                                    <a href="#" class="buy_now">buy now ></a>
+                                    <a href="#" class="cart"><img src="img/icon_202212091524200600.png" alt="cart"></a>
+                                    <a href="#" class="like"><img src="img/icon_202212061411339700.png" alt="like"></a>
+                                </div><!-- content_list_icon -->
+                            </li>
+                        </ul>
+                    </div><!-- project_section_right -->
+                </div><!-- project_section_inner -->
+            </div><!-- project_section -->
+
+            <div class="real_review_section clear_fix">
+                <div class="real_review_section_inner">
+                    <h2>
+                        <div class="title r_tit">REAL REVIEW</div>
+                        <div class="sub_title r_sutit">실제 사용자들의 생생한 리얼리뷰를 소개합니다.</div>
+                    </h2>
+                    <ul class="real_review_section_list">
+                        <li>
+                            <div class="user">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <span>Some****</span>
+                            </div><!-- user -->
+                            <div class="review_hover">
+                                <a href="#">
+                                    <img src="img/review01.jpg" alt="review01">
+                                </a>
+                            </div><!-- review_hover -->
+                            <div class="review_txt_wrap">
+                                <div class="review_txt_top">
+                                    <p>2022-12-07 11:44:57</p>
+                                    <h3>제입에는 별로예요~</h3>
+                                    <span>배송도 느리고 제입에는 맛이없네요~</span>
+                                </div><!-- review_txt_top -->
+                                <hr>
+                                <div class="review_txt_bottom">
+                                    <a href="#">
+                                        <img src="img/review01.jpg" alt="review01" class="review_jpg">
+                                        <div>
+                                            <p>딸기 레몬 그래놀라 3종 세트</p>
+                                            <img src="img/ico_point2.gif" alt="ico_point2">
+                                        </div>
+                                    </a>
+                                </div><!-- review_txt_bottom -->
+                            </div><!-- review_txt_wrap -->
+                        </li>
+                        <li>
+                            <div class="user">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <span>Some****</span>
+                            </div><!-- user -->
+                            <div class="review_hover">
+                                <a href="#">
+                                    <img src="img/review02.jpg" alt="review02">
+                                </a>
+                            </div><!-- review_hover -->
+                            <div class="review_txt_wrap">
+                                <div class="review_txt_top">
+                                    <p>2022-12-07 11:44:57</p>
+                                    <h3>다이어트용으로 딱이예요</h3>
+                                    <span>다이어트중인데 식사대용으로 구입했어요~1+1이라 구매했는데 양도 많고, 맛도 괜찮아요~배송이 느려서 별하나 뺏네요~</span>
+                                </div><!-- review_txt_top -->
+                                <hr>
+                                <div class="review_txt_bottom">
+                                    <a href="#">
+                                        <img src="img/review02.jpg" alt="review02" class="review_jpg">
+                                        <div>
+                                            <p>허니 레몬 그래놀라</p>
+                                            <img src="img/ico_point4.gif" alt="ico_point4">
+                                        </div>
+                                    </a>
+                                </div><!-- review_txt_bottom -->
+                            </div><!-- review_txt_wrap -->
+                        </li>
+                        <li>
+                            <div class="user">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <span>Some****</span>
+                            </div><!-- user -->
+                            <div class="review_hover">
+                                <a href="#">
+                                    <img src="img/review03.jpg" alt="review03">
+                                </a>
+                            </div><!-- review_hover -->
+                            <div class="review_txt_wrap">
+                                <div class="review_txt_top">
+                                    <p>2022-12-07 11:44:53</p>
+                                    <h3>아침대용으로 좋아요</h3>
+                                    <span>출글하기전 아침대용으로 먹으려고 구매했습니다. 3종세트라 골라먹는 재미가 있어요~ 잘챙겨먹고 또 구매할께요~</span>
+                                </div><!-- review_txt_top -->
+                                <hr>
+                                <div class="review_txt_bottom">
+                                    <a href="#">
+                                        <img src="img/review03.jpg" alt="review03" class="review_jpg">
+                                        <div>
+                                            <p>딸기 레몬 그래놀라 3종 세트</p>
+                                            <img src="img/ico_point4.gif" alt="ico_point4">
+                                        </div>
+                                    </a>
+                                </div><!-- review_txt_bottom -->
+                            </div><!-- review_txt_wrap -->
+                        </li>
+                        <li>
+                            <div class="user">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <span>Some****</span>
+                            </div><!-- user -->
+                            <div class="review_hover">
+                                <a href="#">
+                                    <img src="img/review04.jpg" alt="review04">
+                                </a>
+                            </div><!-- review_hover -->
+                            <div class="review_txt_wrap">
+                                <div class="review_txt_top">
+                                    <p>2022-12-07 11:44:38</p>
+                                    <h3>아이들 건강 간식으로 딱이에요</h3>
+                                    <span>간편하게 챙겨줄 수 있어 너무 편하고 무엇보다도 아이들이 너무 잘먹어요~아이들 건강간식으로 추천합니다.~</span>
+                                </div><!-- review_txt_top -->
+                                <hr>
+                                <div class="review_txt_bottom">
+                                    <a href="#">
+                                        <img src="img/review04.jpg" alt="review04" class="review_jpg">
+                                        <div>
+                                            <p>허니 레몬 그래놀라</p>
+                                            <img src="img/ico_point5.gif" alt="ico_point5">
+                                        </div>
+                                    </a>
+                                </div><!-- review_txt_bottom -->
+                            </div><!-- review_txt_wrap -->
+                        </li>
+                    </ul><!-- real_review_section_list -->
+                </div><!-- real_review_section_inner -->
+            </div><!-- real_review_section -->
+
+            <div class="insta_section clear_fix">
+                <div class="insta_section_inner">
+                    <div class="insta_section_title">
+                        <i class="fa-brands fa-instagram"></i>
+                        <h3>Instagram</h3>
+                        <a href="#">Follow</a>
+                    </div><!-- insta_section_title -->
+                    <ul class="insta_section_list">
+                        <li><a href="#"><img src="img/Instagram Photo.jpg" alt="Instagram Photo"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (1).jpg" alt="Instagram Photo (1)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (2).jpg" alt="Instagram Photo (2)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (3).jpg" alt="Instagram Photo (3)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (4).jpg" alt="Instagram Photo (4)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (5).jpg" alt="Instagram Photo (5)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (6).jpg" alt="Instagram Photo (6)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (7).jpg" alt="Instagram Photo (7)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (8).jpg" alt="Instagram Photo (8)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (9).jpg" alt="Instagram Photo (9)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (10).jpg" alt="Instagram Photo (10)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (11).jpg" alt="Instagram Photo (11)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (12).jpg" alt="Instagram Photo (12)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (13).jpg" alt="Instagram Photo (13)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (14).jpg" alt="Instagram Photo (14)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (15).jpg" alt="Instagram Photo (15)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (16).jpg" alt="Instagram Photo (16)"></a></li>
+                        <li><a href="#"><img src="img/Instagram Photo (17).jpg" alt="Instagram Photo (17)"></a></li>
+                    </ul>
+                </div><!-- insta_section_inner -->
+            </div><!-- insta_section -->
+        </section><!-- section -->
+
+
+
+
+        <footer id="footer clear_fix">
+            <div class="footer_inner">
+                <div class="f_left">
+                    <p class="f_call">02-456-1234</p>
+                    <div>MON-FRI 10:00 - 18:00 / LUNCH 12:00 - 13:30 / <br>SAT, SUN, HOLY OFF</div>
+                    <p class="f_company">COMPANY</p>
+                    <div>SomeFood / 대표이사 어썸디 / 개인정보보호책임자 어썸디 / 사업자등록번호 121-11-12345</div>
+                    <div>통신판매신고번호 1234-서울도봉-5678</div>
+                    <div>대표전화 02-456-1234 / 팩스 02-123-4567 / 대표메일 assist@jeonyul.com</div>
+                    <div>주소 서울특별시 강북구 도봉로 144 (미아동) 4층</div>
+                </div><!-- f_left -->
+
+                <div class="f_right">
+                    <div class="f_right_top">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">쇼핑몰이용안내</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                        </ul>
+                    </div><!-- f_right_top -->
+
+                    <div class="f_right_middle">
+                        <ul>
+                            <li class="f_right_middle_left">
+                                <ul>
+                                    <li><a href="#">NOTICE</a></li>
+                                    <li><a href="#">REVIEW</a></li>
+                                    <li><a href="#">Q&A</a></li>
+                                    <li><a href="#">EVENT</a></li>
+                                </ul>
+                            </li><!-- f_right_middle_left -->
+                            <li class="f_right_middle_right">
+                                <ul>
+                                    <li><a href="#">마이페이지</a></li>
+                                    <li><a href="#">장바구니(0)</a></li>
+                                    <li><a href="#">관심상품(0)</a></li>
+                                    <li><a href="#">주문조회</a></li>
+                                    <li><a href="#">쿠폰내역</a></li>
+                                    <li><a href="#">적립금내역</a></li>
+                                </ul>
+                            </li><!-- f_right_middle_right -->
+                        </ul>
+                    </div><!-- f_right_middle -->
+
+                    <div class="f_right_bottom">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fas fa-sms"></i></a></li>
+                        </ul>
+                        <div>COPYRIGHT ©SomeFood ALL RIGHTS RESERVED.</div>
+                    </div><!-- f_right_bottom -->
+                </div><!-- f_right -->
+            </div><!-- footer_inner -->
+        </footer><!-- footer -->
+    </div><!-- wrap -->
+</body>
+</html>
